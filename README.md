@@ -1,6 +1,21 @@
-How to run:
-There are two ways of running this program:
-1. Use the command python batch_run_test.py to run all experiments on all datasets.
-   WARNING: Although this is less repetitive, it can run for a very long time due to a few datasets being sizeable. (e.g. HIV dataset with over 30,000 graphs).
+# How to Run
 
-2. Run the full_multimodal_project.py to be more selective of datasets and feature combinations to test as it accepts user input.
+There are two ways to run this program:
+
+### 1. Batch Run (All Experiments on All Datasets)
+
+Use the following command to run all experiments on **all** datasets:
+
+```bash
+python batch_run_test.py
+```
+**Warning:**
+This method is less repetitive but may take a very long time to complete.
+Some datasets, such as the HIV dataset (which contains over 30,000 graphs), significantly increase the runtime.
+
+### 2. Selectively run datasets and feature combinations
+
+To run the program with user input, allowing you to select specific datasets and feature combinations:
+```bash
+python full_multimodal_project.py
+```
